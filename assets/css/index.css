@@ -1,0 +1,86 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Example font – choose your own! */
+    display: flex; /* Prepares for sidebar and main content arrangement */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust width as needed */
+    height: 100vh;
+    background-color: #222; /* Example dark background */
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav button {
+    display: block;
+    width: 100%;
+    background-color: #333; /* Example button color */
+    color: white;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+.sidebar nav button[disabled] {
+    background-color: #555; /* Greyed out color */
+    opacity: 0.6;
+}
+
+/* Add padlock image styling if needed */
+
+.coming-soon-buttons button {
+    /* Styles for diagonal buttons - will need transforms */
+}
+
+.tom-blog-card {
+    /* Styles for the TOM Blog card */
+}
+
+.tom-blog-card .small {
+    /* Styles for the small "TOM Blog" button */
+}
+
+
+/* Main Content Styling */
+main {
+    flex: 1; /* Allow main area to take up remaining space */
+    padding: 20px;
+    max-width: calc(100% - 250px); /* Adapt based on sidebar width */
+}
+
+
+.top-cards, .bottom-cards {
+    display: flex;
+    justify-content: space-around; /* Example distribution */
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Example shadow */
+    width: 40%;  /* Adjust for desired card sizes */
+    margin: 10px;
+    padding: 20px;
+}
+
+.small-buttons button {
+    /*  Styles for the smaller inner buttons */
+}
+
+.toggle {
+    /* Styles for the toggle button */
+}
