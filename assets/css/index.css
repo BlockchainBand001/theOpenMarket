@@ -112,7 +112,33 @@ button{
     width: 100%;
     display: flex;
     justify-content: space-around; /* Distribute buttons */
-    padding: 15px;      /* Add some padding */
+    /* Add some padding */
+    /* Adjust the pixel value as desired */
+    padding: 5%;
+    padding-bottom: 20%;
+    flex-direction: column;   /*  Change buttons to top-to-bottom */
+    align-items: center;      /* Center buttons horizontally */
+
+
+}
+
+.settings-bar button {
+    width: 80%;                /* Adjust width as needed */
+    margin-bottom: 15px;       /* Add spacing between buttons */
+    padding: 15px 20px;        /* Increase padding for visual substance */
+    border-radius: 10px;       /* Soften the corners */
+    box-shadow: 5px 6px 8px rgba(0, 0, 0, 0.2); /* Strong, defined shadow */
+    display: flex;             /* Prepare for icon placement */
+    align-items: center;       /* Center content vertically */
+    justify-content: center;   /* Center content horizontally */
+    position: relative;        /* For positioning the icon */
+}
+
+.settings-bar button::after { /* Pseudo-element for the icon */
+    content: '';
+    position: absolute;
+    right: 15px;
+    /* You'll need to add your SVG icon via background-image */
 }
 
 .dark-theme {
