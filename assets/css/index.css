@@ -20,7 +20,20 @@ body {
     background-color: green; /* Example dark background */
     color: white;
     padding: 20px;
+    transition: width 0.3s ease-in-out;  /* Smooth resizing transition */
+
 }
+
+
+/*.resize-handle {*/
+/*    position: absolute;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    width: 5px;           !* Width of the resizing handle *!*/
+/*    cursor: ew-resize;    !*  Indicates the resize direction *!*/
+/*    background-color: rgba(0, 0, 0, 0.2); !* Light background as visual cue *!*/
+/*}*/
 
 .sidebar h1 {
     margin-bottom: 20px;
@@ -49,6 +62,8 @@ body {
 
 .tom-blog-card {
     /* Styles for the TOM Blog card */
+    background-color: white;
+    border-radius: 5%;
 }
 
 .tom-blog-card .small {
