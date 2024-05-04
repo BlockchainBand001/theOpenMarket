@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 250px; /* Adjust width as needed */
     height: 100vh;
-    background-color: #222; /* Example dark background */
+    background-color: green; /* Example dark background */
     color: white;
     padding: 20px;
 }
@@ -83,4 +83,24 @@ main {
 
 .toggle {
     /* Styles for the toggle button */
+}
+
+button{
+    border-radius: 15px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.settings-bar {
+    position: absolute; /* Position it at the bottom of the sidebar */
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Distribute buttons */
+    padding: 15px;      /* Add some padding */
+}
+
+.dark-theme {
+    background-color: #222; /* Dark background */
+    color: #f0f0f0; /* Light text */
 }
